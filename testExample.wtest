@@ -1,0 +1,17 @@
+import example.*
+
+
+describe "La formacion 1 tiene 2 vagones, puede transportar 90 pasajeros, y su vagon mas pesado es el vagon2"{
+   
+   test "la formacion 1 tiene 2 vagones"{
+      assert.equals(ejemploDeUso.formacion1.cantidadDeVagones(), 2)
+   }
+    test "la formacion 1 puede transportar 90 pasajeros"{
+        assert.equals(ejemploDeUso.formacion1.totalPasajeros(), 90)
+    }
+    test "El vagon mas pesado de la formacion 1 es el vagon2"{
+        assert.that(ejemploDeUso.formacion1.vagonMasPesado() == ejemploDeUso.vagon2)
+    }
+
+}
+
